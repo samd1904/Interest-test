@@ -1,6 +1,35 @@
-.rowClass{
+.rowClass {
     border: 10px solid black;
-}    
-.tdClass{
-    
+}
+
+.containorDiv {
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.linkClass{
+    color: white;
+}
+.linkClass :hover{
+    color: lightgray;
+}
+#leftHeaderDiv {
+    text-align: center;
+    display: inline-block;
+    zoom: 1;
+    vertical-align: top;
+    width:50%;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+#rightHeaderDiv {
+    text-align: center;
+    display: inline-block;
+    zoom: 1;
+    vertical-align: top;
+    width: 49%;
+    font-size: 12px;
+    margin: 0 auto;
 }
