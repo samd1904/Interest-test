@@ -3,7 +3,8 @@ window.onload = function () {
     for (var i of testOptionsM) {
         var newRow = tbody.insertRow();
         newRow.className = "rowClass";
-        for (var j =0; j<i.Row.length-1; j++) {
+        //for (var j =0; j<i.Row.length-1; j++) {
+        
             var newCell = document.createElement("TD");
             newCell.className = "tdClass";
             var select1 = document.createElement("input");
