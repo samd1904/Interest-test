@@ -1,18 +1,33 @@
 .rowClass {
     border: 10px solid black;
 }
+body{
+    background-color: white;
+}
+
+.rowClass{
+    color: black;
+}
+
+.TFClass{
+    color: black;
+}
+
+.lblDivClass{
+    color: black;
+}
 
 .containorDiv {
     height: 10%;
     width: 100%;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 .linkClass{
-    color: white;
+    color: black;
 }
 .linkClass :hover{
-    color: lightgray;
+    color: black;
 }
 #leftHeaderDiv {
     text-align: center;

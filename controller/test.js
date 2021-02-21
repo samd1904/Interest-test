@@ -3,18 +3,19 @@ window.onload = function () {
     for (var i of testOptionsM) {
         var newRow = tbody.insertRow();
         newRow.className = "rowClass";
-        //for (var j =0; j<i.Row.length-1; j++) {
-        
+        for (var j =0; j<i.Row.length-1; j+=2) {
             var newCell = document.createElement("TD");
             newCell.className = "tdClass";
             var select1 = document.createElement("input");
             select1.setAttribute("type","checkbox");
-            var text1 = document.createTextNode(i.Row[j].occ);    
+            var text1 = document.createTextNode(i.Row[j].occ);
+            var br = document.createElement("br");    
             var select2 = document.createElement("input");
             select2.setAttribute("type","checkbox");
             var text2 = document.createTextNode(i.Row[j+1].occ);    
             newCell.appendChild(select1);
             newCell.appendChild(text1);
+            newCell.appendChild(br);
             newCell.appendChild(select2);
             newCell.appendChild(text2);
             newRow.appendChild(newCell);          
