@@ -3,6 +3,13 @@
 }
 body{
     background-color: white;
+    margin: 0%;
+    padding: 0%;
+}
+
+.bodyContainor{
+    margin: 1%;
+    padding: 1%;
 }
 
 .rowClass{
@@ -20,14 +27,15 @@ body{
 .containorDiv {
     height: 10%;
     width: 100%;
-    background-color: white;
-    color: black;
+    margin: 0%;
+    background-color: black;
+    color: white;
 }
 .linkClass{
-    color: black;
+    color: white;
 }
 .linkClass :hover{
-    color: black;
+    color:red;
 }
 #leftHeaderDiv {
     text-align: center;
