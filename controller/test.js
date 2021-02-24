@@ -24,11 +24,9 @@ window.onload = function () {
 }
 function submit(){
     var tBody = document.getElementById("testTable").getElementsByTagName('tbody')[0];
-    console.log(tBody);
     for(var i in tBody.rows){
-        console.log(tBody.rows[i].cells)
         for(var j in tBody.rows[i].cells){
-            console.log(tBody.rows[i].cells[j])
+            
         }
     }
 }
