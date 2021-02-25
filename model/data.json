@@ -1,0 +1,49 @@
+{
+    "male": [{
+            "Row": [{
+                    "type": "Adm. 1",
+                    "occ": "I.A.S Officer",
+                    "selected": false
+                },
+                {
+                    "type": "Adm. 2",
+                    "occ": "Diplomatic Services",
+                    "selected": false
+                },
+                {
+                    "type": "Ent. 1",
+                    "occ": "Sales Manager",
+                    "selected": false
+                },
+                {
+                    "type": "Adm. 2",
+                    "occ": "Factory Manager",
+                    "selected": false
+                }
+            ]
+        },
+        {
+            "Row": [{
+                    "type": "Adm. 1",
+                    "occ": "Executive Manager",
+                    "selected": false
+                },
+                {
+                    "type": "Ent. 2",
+                    "occ": "Automobile Dealer",
+                    "selected": false
+                },
+                {
+                    "type": "Ent. 1",
+                    "occ": "Airplane Pilot",
+                    "selected": false
+                },
+                {
+                    "type": "Ent. 2",
+                    "occ": "Exporter",
+                    "selected": false
+                }
+            ]
+        }
+    ]
+}
