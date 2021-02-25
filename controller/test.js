@@ -1,7 +1,10 @@
 window.onload = function () {
+    //data.json is stored on the local server using json server
+    //use: npm install -g json-server
     $.getJSON("http://localhost:3000/male", function (testOptionsM) {
         jsonData = testOptionsM;
         var tbody = document.getElementById("testTable").getElementsByTagName('tbody')[0];
+        //creates the table based on the data stored in data.json
         for (var i of testOptionsM) {
             var newRow = tbody.insertRow();
             newRow.className = "rowClass";
@@ -29,9 +32,29 @@ var jsonData;
 
 function submit() {
     var tBody = document.getElementById("testTable").getElementsByTagName('tbody')[0];
-    for (var i in tBody.rows) {
-        for (var j in tBody.rows[i].cells) {
-
+    for (var i = 0, row; row = tBody.rows[i]; i++) {
+        for (var j = 0, col; col = row.cells[j]; j++) {
+            if (col.children[0].checked) {
+                //console.log(i+":"+(parseInt(j)*2));
+                jsonData[i].Row[(parseInt(j) * 2)].selected = true;
+            }
+            if (col.children[2].checked) {
+                jsonData[i].Row[(parseInt(j) * 2 + 1)].selected = true;
+                //console.log(i+":"+(parseInt(j)*2+1));
+            }
         }
     }
+    $.ajax({
+        type: 'PATCH',
+        url: 'http://localhost:3000/',
+        data: JSON.stringify(jsonData),
+        processData: false,
+        contentType: 'application/json',
+        success: function(data){
+            console.log("success");
+        },
+        error: function(err){
+            console.log(err);
+        }
+     });
 }
