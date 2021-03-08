@@ -46,9 +46,8 @@ function submit() {
     }
     $.ajax({
         type: 'PATCH',
-        url: 'http://localhost:3000/',
+        url: 'http://localhost:3000/male',
         data: JSON.stringify(jsonData),
-        processData: false,
         contentType: 'application/json',
         success: function(data){
             console.log("success");
